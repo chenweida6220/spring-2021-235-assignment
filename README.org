@@ -1,0 +1,17 @@
+* Fall 2021 235 Assignments
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Make a folder and add files for each small assignment
+
+
