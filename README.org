@@ -1,10 +1,10 @@
 * Fall 2021 235 Assignments
 
-* Last name:
+* Last name: Chen
 
-* First name:
+* First name: Wei Da
 
-* GitHub username:
+* GitHub username: chenweida6220
 
 * Notes:
 
@@ -13,5 +13,3 @@
 * General instructions:
 - Fill in your name and GitHub username on top.
 - Make a folder and add files for each small assignment
-
-
