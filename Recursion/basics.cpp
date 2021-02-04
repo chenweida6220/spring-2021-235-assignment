@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 /*
   6! = 6*5!
   5! = 5*4!
@@ -39,20 +40,40 @@ int fib(int n) {
   }
 }
 
-int fib_iter(int x) {
+// using loop instead of recursion
+int fib_iter(int n) {
+  int sum, x = 1, y = 1;
 
+  if (n < 2) {
+    return 1;
+  }
+
+  for (int z = 2; z <= n; z++) {
+    sum = x + y;
+    x = y;
+    y = sum;
+  }
+  return sum;
 }
 
 int main() {
   int i;
   for (i = 0; i < 10 ; i++) {
-    std::cout << i << "! = " << fact(i) << "\n";
+    cout << i << "! = " << fact(i) << "\n";
   }
+
+  cout << endl;
 
   for (i = 0; i < 10 ; i++) {
-    std::cout << fib(i) << ", ";
+    cout << fib(i) << ", ";
   }
 
-  std::cout << "\n";
+  cout << endl << endl;
+
+  for (i = 0; i < 10 ; i++) {
+    cout << fib_iter(i) << ", ";
+  }
+
+  cout << "\n";
   return 0;
 }
