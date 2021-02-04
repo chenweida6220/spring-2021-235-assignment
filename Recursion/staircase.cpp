@@ -23,5 +23,5 @@ int countWays(int x) {
 
 int main() {
   int stairs = 5; // total # of ways should be 13 for 5th stair
-  cout << "Number of ways = " << countWays(steps);
+  cout << "Number of ways = " << countWays(stairs);
 }
