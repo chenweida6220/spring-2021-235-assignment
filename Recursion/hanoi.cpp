@@ -8,17 +8,21 @@ Tower of Hanoi
 - No disk can be placed on top of a smaller disk
 */
 
-void hanoi(int numDisks, char initial, char destination, char temp) {
-  if (numDisks == 0) {
+void hanoi(int diskNum, char initial, char destination, char temp) {
+  if (diskNum == 0) {
     cout << "No moves needed.";
   }
-  else if (numDisks == 1) {
-    cout << "Move disk 1 from rod " << initial << " to rod " << destination << endl;
+  else if (diskNum == 1) {
+    cout << "Move disk " << diskNum << " from rod " << initial << " to rod " << destination << endl;
   }
   // ? ??
-  
+  else {
+    hanoi(diskNum-1, initial, destination, temp);
+    cout << "Moving disk " << diskNum << " from rod " << initial << " to rod " << destination << endl;
+    hanoi(diskNum-1, initial, destination, temp);
+  }
 }
 
 int main() {
-  hanoi(5, 'a', 'b', 'c');
+  hanoi(4, 'a', 'b', 'c');
 }
