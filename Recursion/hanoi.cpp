@@ -13,13 +13,12 @@ void hanoi(int diskNum, char initial, char destination, char temp) {
     cout << "No moves needed.";
   }
   else if (diskNum == 1) {
-    cout << "Move disk " << diskNum << " from rod " << initial << " to rod " << destination << endl;
+    cout << "Move a disk from " << initial << " to " << destination << endl;
   }
-  // ? ??
   else {
-    hanoi(diskNum-1, initial, destination, temp);
-    cout << "Moving disk " << diskNum << " from rod " << initial << " to rod " << destination << endl;
-    hanoi(diskNum-1, initial, destination, temp);
+    hanoi(diskNum-1, initial, temp, destination);
+    cout << "Move a disk from " << initial << " to " << destination << endl;
+    hanoi(diskNum-1, temp, destination, initial);
   }
 }
 
