@@ -14,7 +14,7 @@ void stack::push(int num) {
 }
 
 void stack::pop() {
-  vec.erase(vec.begin() + (size-1));
+  vec.erase(vec.begin());
   size--;
 }
 
