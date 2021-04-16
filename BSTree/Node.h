@@ -1,7 +1,6 @@
 #pragma once
 
-class Node
-{
+class Node {
 	private:
 		int data;
 		Node *right;

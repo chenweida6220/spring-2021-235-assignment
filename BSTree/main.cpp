@@ -2,6 +2,7 @@
 using namespace std;
 
 #include "Node.h"
+#include "BSTree.h"
 
 int main() {
   Node *n = new Node(20);
@@ -14,4 +15,10 @@ int main() {
   cout << n->getLeft()->getData();
   cout << "  ";
   cout << n->getRight()->getData() << endl;
+
+  cout << endl;
+
+  BSTree *t = new BSTree();
+  t->setup();
+  cout << t->get_debug_String() << "\n";
 }
